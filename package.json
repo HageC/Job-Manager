@@ -1,0 +1,46 @@
+{
+  "name": "job-manager",
+  "version": "1.0.0",
+  "description": "a full stack app using react, nodejs, and mongodb to create and view job postings",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build-front": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "server": "nodemon server --ignore client",
+    "client": "npm start --prefix client",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \" npm run client\"",
+    "heroku-postbuild": "npm run install-cleint && npm run build-front"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HageC/job-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HageC/job-manager/issues"
+  },
+  "homepage": "https://github.com/HageC/job-manager#readme",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.6.0",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20",
+    "react-icons": "^4.6.0",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

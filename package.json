@@ -10,7 +10,7 @@
     "server": "nodemon server --ignore client",
     "client": "npm start --prefix client",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \" npm run client\"",
-    "heroku-postbuild": "npm run install-cleint && npm run build-front"
+    "heroku-postbuild": "npm run install-client && npm run build-front"
   },
   "repository": {
     "type": "git",

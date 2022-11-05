@@ -11,6 +11,7 @@ const StyleWrapper = styled.div.attrs({ className: "dashboard" })`
   .dashboard {
     display: grid;
     grid-template-columns: auto 1fr;
+    height: calc(100vh - 5rem);
   }
   h1 {
     width: auto;
@@ -20,7 +21,7 @@ const StyleWrapper = styled.div.attrs({ className: "dashboard" })`
     margin-left: 0;
     padding: 0;
     background-color: #f1f1f1;
-    height: calc(100vh - 5rem);
+
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;

@@ -43,6 +43,12 @@ const StyleWrapper = styled.div`
     width: 800px;
     height: auto;
   }
+
+  @media only screen and (max-width: 750px) {
+    .no-job-img {
+      display: none;
+    }
+  }
 `;
 
 const Jobs = () => {

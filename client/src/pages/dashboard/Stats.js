@@ -44,7 +44,9 @@ const StyleWrapper = styled.div`
     .stats {
       flex-direction: column;
     }
-
+    .data-img {
+      display: none;
+    }
     .stats div {
       margin: 0 auto 2rem auto;
     }
